@@ -1,6 +1,5 @@
 import React from 'react';
 import ExperienceItem from './ExperienceItem';
-import { T_ExperienceItem } from '../../types/Experience';
 import './index.scss';
 
 const experiences = [
@@ -11,6 +10,7 @@ const experiences = [
     description: 'Lorem ipsum dolor.',
     employmentStatus: 'Full-time',
     isCurrent: true,
+    alignLeft: false,
   },
   {
     company: 'Data Driven AI',
@@ -19,6 +19,7 @@ const experiences = [
     description: 'Lorem ipsum dolor.',
     employmentStatus: 'Freelance',
     isCurrent: false,
+    alignLeft: true,
   },
   {
     company: 'Junior Web Developer',
@@ -27,6 +28,7 @@ const experiences = [
     description: 'Lorem ipsum dolor.',
     employmentStatus: 'Full-time',
     isCurrent: false,
+    alignLeft: false,
   },
   {
     company: 'Johnson & Johnson Global Services',
@@ -35,6 +37,7 @@ const experiences = [
     description: 'Lorem ipsum dolor.',
     employmentStatus: 'Full-time',
     isCurrent: false,
+    alignLeft: true,
   },
   {
     company: 'M&H Food Corporation',
@@ -43,17 +46,23 @@ const experiences = [
     description: 'Lorem ipsum dolor.',
     employmentStatus: 'Full-time',
     isCurrent: false,
+    alignLeft: false,
   },
 ];
 
 const Experience: React.FC = () => {
   return (
-    <div className="experience">
-      <ol className="container mx-auto relative border-l border-gray-200 dark:border-gray-700">
-        {experiences.map((item) => (
-          <ExperienceItem {...item} />
+    <div className="container bg-gray-200 mx-auto w-full h-full">
+      <div className="relative wrap overflow-hidden p-10 h-full">
+        <div
+          className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
+          style={{ left: '50%' }}
+        ></div>
+
+        {experiences.map((item, index) => (
+          <ExperienceItem itemNumber={index + 1} {...item} />
         ))}
-      </ol>
+      </div>
     </div>
   );
 };

@@ -1,51 +1,48 @@
 import React from 'react';
 import { T_ExperienceItem } from '../../types/Experience';
 
-const ExperienceItem: React.FC<T_ExperienceItem> = ({
+interface ExperienceItemProps extends T_ExperienceItem {
+  itemNumber: number;
+}
+
+const ExperienceItem: React.FC<ExperienceItemProps> = ({
   company,
   position,
   timeOfStay,
   description,
   employmentStatus,
   isCurrent,
+  alignLeft,
+  itemNumber,
 }) => {
   return (
-    <li className="mb-10 ml-6">
-      <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-        <svg
-          className="w-3 h-3 text-blue-600 dark:text-blue-400"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </span>
-      <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-        {company}
-        <span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
-          {employmentStatus}
-        </span>
-        {isCurrent && (
-          <span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
-            Current
-          </span>
-        )}
-      </h3>
-      <h4 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-        {position}
-      </h4>
-      <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-900">
-        {timeOfStay}
-      </time>
-      <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-        {description}
-      </p>
-    </li>
+    <div
+      className={`mb-8 flex justify-between items-center w-full ${
+        alignLeft ? 'flex-row-reverse' : ''
+      }`}
+    >
+      <div className="order-1 w-5/12"></div>
+      <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+        <h1 className="mx-auto text-white font-semibold text-lg">
+          {itemNumber}
+        </h1>
+      </div>
+      <div
+        className={`order-1 rounded-lg shadow-xl w-5/12 px-6 py-4 ${
+          alignLeft ? 'bg-red-400' : 'bg-gray-400'
+        }`}
+      >
+        <h3 className="font-bold text-gray text-xl">{company}</h3>
+        <h3 className="font-bold text-white text-lg">{position}</h3>
+        <h3 className="mb-3 text-white text-md">{timeOfStay}</h3>
+        <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </p>
+      </div>
+    </div>
   );
 };
 

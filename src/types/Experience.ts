@@ -5,4 +5,5 @@ export interface T_ExperienceItem {
   description: string;
   employmentStatus: string;
   isCurrent: boolean;
+  alignLeft: boolean;
 }
