@@ -19,7 +19,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
 }) => {
   return (
     <div
-      className={`mb-8 flex justify-between items-center w-full ${
+      className={`mb-16 flex justify-between items-center w-full ${
         alignLeft ? 'flex-row-reverse' : ''
       }`}
     >

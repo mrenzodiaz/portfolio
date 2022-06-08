@@ -6,35 +6,32 @@ import './index.scss';
 
 const dataDrivenImages = () => {
   return (
-    <div className="relative">
+    <div className="relative p-10">
       <Animate
         animateOnce
         animateIn="animate__fadeInRight"
-        offset={200}
+        className="text-right"
+        offset={150}
         duration={0.5}
       >
         <ImageLazyLoader
-          className="shadow-2xl sm:w-96 xl:w-auto"
+          className="shadow-2xl w-auto"
           src="/Experiences/cm2.png"
           alt="Cloudmonitor AI 1"
-          height={300}
-          width={400}
         />
       </Animate>
 
       <Animate
         animateOnce
         animateIn="animate__fadeInRight"
-        className="absolute left-65 -right-8 lg:left-auto xl:left-60"
-        offset={200}
+        className="absolute -bottom-4 -left-14 xl:-bottom-12"
+        offset={150}
         duration={0.5}
-        style={{ top: '10.5rem' }}
       >
         <ImageLazyLoader
-          className="shadow-2xl sm:w-96 xl:w-auto"
+          className="shadow-2xl w-6/12"
           src="/Experiences/cm1.png"
           alt="Cloudmonitor AI 2"
-          width={250}
         />
       </Animate>
     </div>
@@ -43,36 +40,32 @@ const dataDrivenImages = () => {
 
 const sykesImages = () => {
   return (
-    <div className="relative">
+    <div className="relative p-10">
       <Animate
         animateOnce
         animateIn="animate__fadeInLeft"
         className="text-right"
-        offset={200}
+        offset={150}
         duration={0.5}
       >
         <ImageLazyLoader
-          className="shadow-2xl xl:w-auto"
+          className="shadow-2xl w-auto"
           src="/Experiences/mysykes2.png"
           alt="MySYKES 1"
-          height={300}
-          width={400}
         />
       </Animate>
 
       <Animate
         animateOnce
         animateIn="animate__fadeInLeft"
-        className="absolute -left-8 xl:left-10"
-        offset={200}
+        className="absolute -bottom-4 -left-14 xl:-bottom-12"
+        offset={150}
         duration={0.5}
-        style={{ top: '9rem' }}
       >
         <ImageLazyLoader
-          className="shadow-2xl w-96"
+          className="shadow-2xl w-6/12"
           src="/Experiences/mysykes1.png"
           alt="MySYKES 2"
-          width={250}
         />
       </Animate>
     </div>
@@ -81,36 +74,32 @@ const sykesImages = () => {
 
 const pinionSoftwareImages = () => {
   return (
-    <div className="relative">
+    <div className="relative p-10">
       <Animate
         animateOnce
         animateIn="animate__fadeInLeft"
         className="text-right"
-        offset={200}
+        offset={150}
         duration={0.5}
       >
         <ImageLazyLoader
-          className="shadow-2xl xl:w-auto"
+          className="shadow-2xl w-auto"
           src="/Experiences/collicare1.png"
-          alt="MySYKES 1"
-          height={300}
-          width={400}
+          alt="Collicare 1"
         />
       </Animate>
 
       <Animate
         animateOnce
         animateIn="animate__fadeInLeft"
-        className="absolute -left-8 xl:left-10"
-        offset={200}
+        className="absolute -bottom-4 -left-14 xl:-bottom-12"
+        offset={150}
         duration={0.5}
-        style={{ top: '9rem' }}
       >
         <ImageLazyLoader
-          className="shadow-2xl w-96"
+          className="shadow-2xl w-6/12"
           src="/Experiences/collicare2.png"
-          alt="MySYKES 2"
-          width={250}
+          alt="Collicare 2"
         />
       </Animate>
     </div>
@@ -123,7 +112,7 @@ const jnjImages = () => {
       <Animate
         animateOnce
         animateIn="animate__fadeInRight"
-        offset={200}
+        offset={150}
         duration={0.5}
       >
         <ImageLazyLoader
@@ -143,7 +132,7 @@ const henlinImages = () => {
       <Animate
         animateOnce
         animateIn="animate__fadeInLeft"
-        offset={200}
+        offset={150}
         duration={0.5}
       >
         <ImageLazyLoader
