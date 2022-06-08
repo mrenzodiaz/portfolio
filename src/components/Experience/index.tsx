@@ -9,7 +9,7 @@ const dataDrivenImages = () => {
     <div className="relative">
       <Animate
         animateOnce
-        animateIn="animate-fade-to-right"
+        animateIn="animate__fadeInRight"
         offset={200}
         duration={0.5}
       >
@@ -24,7 +24,7 @@ const dataDrivenImages = () => {
 
       <Animate
         animateOnce
-        animateIn="animate-fade-to-right"
+        animateIn="animate__fadeInRight"
         className="absolute left-65 -right-8 lg:left-auto xl:left-60"
         offset={200}
         duration={0.5}
@@ -46,7 +46,7 @@ const sykesImages = () => {
     <div className="relative">
       <Animate
         animateOnce
-        animateIn="animate-fade-to-right"
+        animateIn="animate__fadeInLeft"
         className="text-right"
         offset={200}
         duration={0.5}
@@ -62,7 +62,7 @@ const sykesImages = () => {
 
       <Animate
         animateOnce
-        animateIn="animate-fade-to-right"
+        animateIn="animate__fadeInLeft"
         className="absolute -left-8 xl:left-10"
         offset={200}
         duration={0.5}
@@ -84,7 +84,7 @@ const pinionSoftwareImages = () => {
     <div className="relative">
       <Animate
         animateOnce
-        animateIn="animate-fade-to-right"
+        animateIn="animate__fadeInLeft"
         className="text-right"
         offset={200}
         duration={0.5}
@@ -100,7 +100,7 @@ const pinionSoftwareImages = () => {
 
       <Animate
         animateOnce
-        animateIn="animate-fade-to-right"
+        animateIn="animate__fadeInLeft"
         className="absolute -left-8 xl:left-10"
         offset={200}
         duration={0.5}
@@ -122,7 +122,7 @@ const jnjImages = () => {
     <div className="relative">
       <Animate
         animateOnce
-        animateIn="animate-fade-to-right"
+        animateIn="animate__fadeInRight"
         offset={200}
         duration={0.5}
       >
@@ -142,7 +142,7 @@ const henlinImages = () => {
     <div className="relative">
       <Animate
         animateOnce
-        animateIn="animate-fade-to-right"
+        animateIn="animate__fadeInLeft"
         offset={200}
         duration={0.5}
       >
