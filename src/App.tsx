@@ -1,12 +1,13 @@
 import React from 'react';
 import { CodeIcon } from '@heroicons/react/solid';
 import Experience from './components/Experience/';
+import Technologies from './components/Technologies';
 
 import './App.scss';
 
 function App() {
   return (
-    <>
+    <div className="container mx-auto">
       <header className="header">
         <div className="container relative flex flex-col justify-center items-center z-10">
           <CodeIcon className="h-14 w-14 text-blue-500" />
@@ -21,9 +22,9 @@ function App() {
           </p>
         </div>
       </header>
-
       <Experience />
-    </>
+      <Technologies />
+    </div>
   );
 }
 

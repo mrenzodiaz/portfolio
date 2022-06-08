@@ -6,7 +6,7 @@ import './index.scss';
 
 const dataDrivenImages = () => {
   return (
-    <div className="relative p-10">
+    <div className="relative p-10 pt-2 mx-10 md:mx-0">
       <Animate
         animateOnce
         animateIn="animate__fadeInRight"
@@ -24,7 +24,7 @@ const dataDrivenImages = () => {
       <Animate
         animateOnce
         animateIn="animate__fadeInRight"
-        className="absolute -bottom-4 -left-14 xl:-bottom-12"
+        className="absolute -bottom-4 -left-2 md:-left-14 md:-bottom-6"
         offset={150}
         duration={0.5}
       >
@@ -40,10 +40,10 @@ const dataDrivenImages = () => {
 
 const sykesImages = () => {
   return (
-    <div className="relative p-10">
+    <div className="relative p-10 pt-2 mx-10 md:mx-0">
       <Animate
         animateOnce
-        animateIn="animate__fadeInLeft"
+        animateIn="animate__fadeInRight"
         className="text-right"
         offset={150}
         duration={0.5}
@@ -57,8 +57,8 @@ const sykesImages = () => {
 
       <Animate
         animateOnce
-        animateIn="animate__fadeInLeft"
-        className="absolute -bottom-4 -left-14 xl:-bottom-12"
+        animateIn="animate__fadeInRight"
+        className="absolute -bottom-4 -left-2 md:-left-14 md:-bottom-6"
         offset={150}
         duration={0.5}
       >
@@ -74,7 +74,7 @@ const sykesImages = () => {
 
 const pinionSoftwareImages = () => {
   return (
-    <div className="relative p-10">
+    <div className="relative p-10 pt-2 mx-10 md:mx-0">
       <Animate
         animateOnce
         animateIn="animate__fadeInLeft"
@@ -92,7 +92,7 @@ const pinionSoftwareImages = () => {
       <Animate
         animateOnce
         animateIn="animate__fadeInLeft"
-        className="absolute -bottom-4 -left-14 xl:-bottom-12"
+        className="absolute -bottom-4 -left-2 md:-left-14 md:-bottom-6"
         offset={150}
         duration={0.5}
       >
@@ -108,7 +108,7 @@ const pinionSoftwareImages = () => {
 
 const jnjImages = () => {
   return (
-    <div className="relative">
+    <div className="relative pt-2">
       <Animate
         animateOnce
         animateIn="animate__fadeInRight"
@@ -116,7 +116,7 @@ const jnjImages = () => {
         duration={0.5}
       >
         <ImageLazyLoader
-          className="shadow-2xl sm:w-96 xl:w-8/12 rounded-md"
+          className="shadow-2xl w-full md:w-12/12 lg:w-8/12 rounded-md"
           src="/Experiences/jnj.gif"
           alt="JnJ"
           width="100%"
@@ -128,7 +128,7 @@ const jnjImages = () => {
 
 const henlinImages = () => {
   return (
-    <div className="relative">
+    <div className="relative pt-2">
       <Animate
         animateOnce
         animateIn="animate__fadeInLeft"
@@ -136,7 +136,7 @@ const henlinImages = () => {
         duration={0.5}
       >
         <ImageLazyLoader
-          className="shadow-2xl sm:w-full xl:w-full rounded-md"
+          className="shadow-2xl w-full md:w-12/12 lg:w-8/12 rounded-md"
           src="/Experiences/henlin.png"
           alt="JnJ"
           width="100%"
@@ -149,9 +149,10 @@ const henlinImages = () => {
 const experiences = [
   {
     company: 'Sitel Group (former SYKES Asia)',
-    position: 'Software Engineer (ReactJS)',
+    position: 'Software Engineer',
     timeOfStay: 'May 2020 - Present',
-    description: 'Lorem ipsum dolor.',
+    description:
+      "I'm a mid-level Software Engineer at SYKES Asia Inc. (recently acquired by Sitel Group), a frontend developer (ReactJS) that develops and maintain 2 of our internal web apps.",
     employmentStatus: 'Full-time',
     isCurrent: true,
     alignLeft: false,
@@ -161,7 +162,8 @@ const experiences = [
     company: 'Data Driven AI',
     position: 'Frontend React Engineer',
     timeOfStay: 'December 2021',
-    description: 'Lorem ipsum dolor.',
+    description:
+      'ReactJS contractor of Data Driven, we have developed CloudMonitor. CloudMonitor is an Microsoft Azure resource monitoring App that monitors your cloud consumption costs and looks for cost-saving opportunities.',
     employmentStatus: 'Freelance',
     isCurrent: false,
     alignLeft: true,
@@ -171,7 +173,8 @@ const experiences = [
     company: 'Pinion Software',
     position: 'Junior Web Developer',
     timeOfStay: 'May 2019 - May 2020',
-    description: 'Lorem ipsum dolor.',
+    description:
+      '• Created mobile applications using React Native • Created web applications using different frontend frameworks such as ReactJS and VueJS • Translated design mock-ups into quality websites',
     employmentStatus: 'Full-time',
     isCurrent: false,
     alignLeft: false,
@@ -181,7 +184,8 @@ const experiences = [
     company: 'Johnson & Johnson Global Services',
     position: 'Knowledge Management Specialist',
     timeOfStay: 'Sep 2017 - May 2019',
-    description: 'Lorem ipsum dolor.',
+    description:
+      'I have been a contractor in Johnson & Johnson Global Services Philippines under HR Knowledge Management Team. We developed a tool for the HR Knowledge Management team that automates their weekly and monthly report ReactJS and Laravel, but our main role as a contractor is to convert an HR related files to HTML and CSS that was being uploaded to their CMS (Salesforce.com).',
     employmentStatus: 'Full-time',
     isCurrent: false,
     alignLeft: true,
@@ -191,7 +195,8 @@ const experiences = [
     company: 'M&H Food Corporation',
     position: 'Management Information Systems Specialist',
     timeOfStay: 'Jan 2017 - Jul 2017',
-    description: 'Lorem ipsum dolor.',
+    description:
+      'As an MIS Staff, we do an all around IT stuffs (web development, technical support, network admin, system) for the company. Our time was divided for Web Development (50% of our time for the day) and the rest is for other technical stuffs. I have been involved in Front-end Web Development.',
     employmentStatus: 'Full-time',
     isCurrent: false,
     alignLeft: false,
@@ -201,10 +206,10 @@ const experiences = [
 
 const Experience: React.FC = () => {
   return (
-    <div className="container bg-gray-200 mx-auto w-full h-full">
+    <div className="w-full h-full">
       <div className="relative wrap overflow-hidden h-full p-2 md:p-7 sm:p-3">
         <div
-          className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
+          className="h-full border-2-2 absolute border-opacity-20 border-gray-700 md:border"
           style={{ left: '50%' }}
         ></div>
 

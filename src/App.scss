@@ -1,7 +1,7 @@
 .header {
   @apply relative z-10;
   @apply pb-24;
-  height: 500px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,8 +12,12 @@
     height: 650px;
   }
 
-  @screen xl {
+  @screen md {
     height: 750px;
+  }
+
+  @screen xl {
+    height: 850px;
   }
 
   &:before {
