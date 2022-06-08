@@ -1,12 +1,12 @@
 .header {
   @apply relative z-10;
+  @apply pb-16;
   height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
-  @apply text-2xl;
 
   @screen sm {
     height: 550px;
@@ -21,12 +21,12 @@
     z-index: -1;
     content: '';
     left: 30%;
-    bottom: 30px;
+    bottom: 65px;
     height: 100%;
     min-height: 300vw;
     width: 300vw;
     border-radius: 150vw;
-    transform: translateX(-40%);
+    transform: translateX(-35%);
     background: linear-gradient(
       210deg,
       rgb(51 65 85) 75%,
