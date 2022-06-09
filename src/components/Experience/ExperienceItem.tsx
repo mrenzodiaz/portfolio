@@ -32,17 +32,16 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
         </h1>
       </div>
       <div
-        className={`order-1 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 bg-red-400`}
+        className={`order-1 rounded-lg shadow-xl w-full md:w-5/12 px-8 py-6 bg-slate-600`}
       >
         <div className="flex flex-col xl:flex-row">
-          <span className="font-bold text-white text-xl mr-3 w-12/12">
+          <span className="font-bold text-rose-400 text-2xl mr-3 w-12/12">
             {company}
           </span>
-          <span className=" text-white text-center text-sm rounded-lg shadow-xl px-1 py-1 bg-slate-700 break-words w-12/12 xl:w-3/12 lg:w-4/12">
-            {employmentStatus}
-          </span>
         </div>
-
+        <h3 className=" text-white text-center text-sm rounded-lg shadow-xl px-1 py-1 bg-slate-700 break-words w-3/12 md:w-4/12">
+          {employmentStatus}
+        </h3>
         <h3 className="text-white text-lg">{position}</h3>
         <h3 className="mb-3 text-white text-md">{timeOfStay}</h3>
         <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100 text-justify">

@@ -10,7 +10,7 @@ function App() {
     <div className="container mx-auto">
       <header className="header">
         <div className="container relative flex flex-col justify-center items-center z-10">
-          <CodeIcon className="h-14 w-14 text-blue-500" />
+          <CodeIcon className="h-14 w-14 text-white" />
           <p className="subpixel-antialiased my-5 text-center text-xl sm:text-4xl">
             Hi, I am{' '}
             <span className="text-rose-400 font-extrabold">
