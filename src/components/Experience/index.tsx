@@ -40,35 +40,37 @@ const dataDrivenImages = () => {
 
 const sykesImages = () => {
   return (
-    <div className="relative p-10 pt-2 mx-10 md:mx-0">
-      <Animate
-        animateOnce
-        animateIn="animate__fadeInRight"
-        className="text-right"
-        offset={150}
-        duration={0.5}
-      >
-        <ImageLazyLoader
-          className="shadow-2xl w-auto"
-          src="/portfolio/images/experiences/mysykes2.png"
-          alt="MySYKES 1"
-        />
-      </Animate>
+    <>
+      <div className="relative p-10 pt-2 mx-10 md:mx-0">
+        <Animate
+          animateOnce
+          animateIn="animate__fadeInLeft"
+          className="text-right"
+          offset={150}
+          duration={0.5}
+        >
+          <ImageLazyLoader
+            className="shadow-2xl w-auto"
+            src="/portfolio/images/experiences/mysykes2.png"
+            alt="MySYKES 1"
+          />
+        </Animate>
 
-      <Animate
-        animateOnce
-        animateIn="animate__fadeInRight"
-        className="absolute -bottom-4 -left-2 md:-left-14 md:-bottom-6"
-        offset={150}
-        duration={0.5}
-      >
-        <ImageLazyLoader
-          className="shadow-2xl w-6/12"
-          src="/portfolio/images/experiences/mysykes1.png"
-          alt="MySYKES 2"
-        />
-      </Animate>
-    </div>
+        <Animate
+          animateOnce
+          animateIn="animate__fadeInLeft"
+          className="absolute -bottom-4 -left-2 md:-left-14 md:-bottom-6"
+          offset={150}
+          duration={0.5}
+        >
+          <ImageLazyLoader
+            className="shadow-2xl w-6/12"
+            src="/portfolio/images/experiences/mysykes1.png"
+            alt="MySYKES 2"
+          />
+        </Animate>
+      </div>
+    </>
   );
 };
 
