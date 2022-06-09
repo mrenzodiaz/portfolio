@@ -4,6 +4,8 @@ import ImageLazyLoader from '../ImageLazyLoader';
 import Animate from '../Animate';
 import './index.scss';
 
+const ANIMATE_DURATION = 0.8;
+
 const dataDrivenImages = () => {
   return (
     <div className="relative p-10 pt-2 mx-10 md:mx-0">
@@ -12,7 +14,7 @@ const dataDrivenImages = () => {
         animateIn="animate__fadeInRight"
         className="text-right"
         offset={150}
-        duration={0.5}
+        duration={ANIMATE_DURATION}
       >
         <ImageLazyLoader
           className="shadow-2xl w-auto"
@@ -26,7 +28,7 @@ const dataDrivenImages = () => {
         animateIn="animate__fadeInRight"
         className="absolute -bottom-4 -left-2 md:-left-14 md:-bottom-6"
         offset={150}
-        duration={0.5}
+        duration={ANIMATE_DURATION}
       >
         <ImageLazyLoader
           className="shadow-2xl w-6/12"
@@ -47,19 +49,18 @@ const sykesImages = () => {
           animateIn="animate__fadeInLeft"
           className="text-right"
           offset={150}
-          duration={0.5}
+          duration={ANIMATE_DURATION}
         >
-          <img
-            className="shadow-2xl w-auto"
-            src="/portfolio/images/experiences/mysykes2.png"
-            alt="MySYKES 1"
-          />
-
-          {/* <ImageLazyLoader
+          {/* <img
             className="shadow-2xl w-auto"
             src="/portfolio/images/experiences/mysykes2.png"
             alt="MySYKES 1"
           /> */}
+          <ImageLazyLoader
+            className="shadow-2xl w-auto"
+            src="/portfolio/images/experiences/mysykes2.png"
+            alt="MySYKES 1"
+          />
         </Animate>
 
         <Animate
@@ -67,19 +68,18 @@ const sykesImages = () => {
           animateIn="animate__fadeInLeft"
           className="absolute -bottom-4 -left-2 md:-left-14 md:-bottom-6"
           offset={150}
-          duration={0.5}
+          duration={ANIMATE_DURATION}
         >
-          <img
-            className="shadow-2xl w-6/12"
-            src="/portfolio/images/experiences/mysykes1.png"
-            alt="MySYKES 2"
-          />
-
-          {/* <ImageLazyLoader
+          {/* <img
             className="shadow-2xl w-6/12"
             src="/portfolio/images/experiences/mysykes1.png"
             alt="MySYKES 2"
           /> */}
+          <ImageLazyLoader
+            className="shadow-2xl w-6/12"
+            src="/portfolio/images/experiences/mysykes1.png"
+            alt="MySYKES 2"
+          />
         </Animate>
       </div>
     </>
@@ -94,7 +94,7 @@ const pinionSoftwareImages = () => {
         animateIn="animate__fadeInLeft"
         className="text-right"
         offset={150}
-        duration={0.5}
+        duration={ANIMATE_DURATION}
       >
         <ImageLazyLoader
           className="shadow-2xl w-auto"
@@ -108,7 +108,7 @@ const pinionSoftwareImages = () => {
         animateIn="animate__fadeInLeft"
         className="absolute -bottom-4 -left-2 md:-left-14 md:-bottom-6"
         offset={150}
-        duration={0.5}
+        duration={ANIMATE_DURATION}
       >
         <ImageLazyLoader
           className="shadow-2xl w-6/12"
@@ -127,7 +127,7 @@ const jnjImages = () => {
         animateOnce
         animateIn="animate__fadeInRight"
         offset={150}
-        duration={0.5}
+        duration={ANIMATE_DURATION}
       >
         <ImageLazyLoader
           className="shadow-2xl w-full md:w-12/12 lg:w-8/12 rounded-md"
@@ -147,7 +147,7 @@ const henlinImages = () => {
         animateOnce
         animateIn="animate__fadeInLeft"
         offset={150}
-        duration={0.5}
+        duration={ANIMATE_DURATION}
       >
         <ImageLazyLoader
           className="shadow-2xl w-full md:w-12/12 lg:w-8/12 rounded-md"
