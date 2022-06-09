@@ -106,7 +106,7 @@ const Technologies = () => {
       <p className="uppercase text-xl sm:text-3xl font-bold text-white text-center">
         Tech Stack
       </p>
-      <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 justify-items-center items-center sm:mt-16 pb-20 sm:py-0 text-center">
+      <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 justify-items-center items-center mt-10 sm:mt-16 pb-20 sm:py-0 text-center">
         {techStack.map((tech: T_TechStackItem) => (
           <div className="w-32 my-4 sm:my-8">
             <div className="h-32 w-32 rounded-3xl bg-slate-800 shadow-2xl flex items-center justify-center">

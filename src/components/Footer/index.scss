@@ -1,0 +1,8 @@
+.footer {
+  @apply relative z-10 flex items-end sm:mt-48 mt-36 xl:px-0 px-8 pb-24;
+  @apply bg-slate-600;
+
+  &-pitch {
+    @apply px-16 py-10 bg-white shadow-2xl rounded-2xl mb-24 relative -mt-10;
+  }
+}
