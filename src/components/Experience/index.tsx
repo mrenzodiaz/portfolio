@@ -49,11 +49,17 @@ const sykesImages = () => {
           offset={150}
           duration={0.5}
         >
-          <ImageLazyLoader
+          <img
             className="shadow-2xl w-auto"
             src="/portfolio/images/experiences/mysykes2.png"
             alt="MySYKES 1"
           />
+
+          {/* <ImageLazyLoader
+            className="shadow-2xl w-auto"
+            src="/portfolio/images/experiences/mysykes2.png"
+            alt="MySYKES 1"
+          /> */}
         </Animate>
 
         <Animate
@@ -63,11 +69,17 @@ const sykesImages = () => {
           offset={150}
           duration={0.5}
         >
-          <ImageLazyLoader
+          <img
             className="shadow-2xl w-6/12"
             src="/portfolio/images/experiences/mysykes1.png"
             alt="MySYKES 2"
           />
+
+          {/* <ImageLazyLoader
+            className="shadow-2xl w-6/12"
+            src="/portfolio/images/experiences/mysykes1.png"
+            alt="MySYKES 2"
+          /> */}
         </Animate>
       </div>
     </>
