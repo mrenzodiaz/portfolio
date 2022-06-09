@@ -51,11 +51,6 @@ const sykesImages = () => {
           offset={150}
           duration={ANIMATE_DURATION}
         >
-          {/* <img
-            className="shadow-2xl w-auto"
-            src="/portfolio/images/experiences/mysykes2.png"
-            alt="MySYKES 1"
-          /> */}
           <ImageLazyLoader
             className="shadow-2xl w-auto"
             src="/portfolio/images/experiences/mysykes2.png"
@@ -70,11 +65,6 @@ const sykesImages = () => {
           offset={150}
           duration={ANIMATE_DURATION}
         >
-          {/* <img
-            className="shadow-2xl w-6/12"
-            src="/portfolio/images/experiences/mysykes1.png"
-            alt="MySYKES 2"
-          /> */}
           <ImageLazyLoader
             className="shadow-2xl w-6/12"
             src="/portfolio/images/experiences/mysykes1.png"
