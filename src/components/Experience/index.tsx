@@ -16,7 +16,7 @@ const dataDrivenImages = () => {
       >
         <ImageLazyLoader
           className="shadow-2xl w-auto"
-          src="/Experiences/cm2.png"
+          src="/portfolio/images/experiences/cm2.png"
           alt="Cloudmonitor AI 1"
         />
       </Animate>
@@ -30,7 +30,7 @@ const dataDrivenImages = () => {
       >
         <ImageLazyLoader
           className="shadow-2xl w-6/12"
-          src="/Experiences/cm1.png"
+          src="/portfolio/images/experiences/cm1.png"
           alt="Cloudmonitor AI 2"
         />
       </Animate>
@@ -50,7 +50,7 @@ const sykesImages = () => {
       >
         <ImageLazyLoader
           className="shadow-2xl w-auto"
-          src="/Experiences/mysykes2.png"
+          src="/portfolio/images/experiences/mysykes2.png"
           alt="MySYKES 1"
         />
       </Animate>
@@ -64,7 +64,7 @@ const sykesImages = () => {
       >
         <ImageLazyLoader
           className="shadow-2xl w-6/12"
-          src="/Experiences/mysykes1.png"
+          src="/portfolio/images/experiences/mysykes1.png"
           alt="MySYKES 2"
         />
       </Animate>
@@ -84,7 +84,7 @@ const pinionSoftwareImages = () => {
       >
         <ImageLazyLoader
           className="shadow-2xl w-auto"
-          src="/Experiences/collicare1.png"
+          src="/portfolio/images/experiences/collicare1.png"
           alt="Collicare 1"
         />
       </Animate>
@@ -98,7 +98,7 @@ const pinionSoftwareImages = () => {
       >
         <ImageLazyLoader
           className="shadow-2xl w-6/12"
-          src="/Experiences/collicare2.png"
+          src="/portfolio/images/experiences/collicare2.png"
           alt="Collicare 2"
         />
       </Animate>
@@ -117,7 +117,7 @@ const jnjImages = () => {
       >
         <ImageLazyLoader
           className="shadow-2xl w-full md:w-12/12 lg:w-8/12 rounded-md"
-          src="/Experiences/jnj.gif"
+          src="/portfolio/images/experiences/jnj.gif"
           alt="JnJ"
           width="100%"
         />
@@ -137,7 +137,7 @@ const henlinImages = () => {
       >
         <ImageLazyLoader
           className="shadow-2xl w-full md:w-12/12 lg:w-8/12 rounded-md"
-          src="/Experiences/henlin.png"
+          src="/portfolio/images/experiences/henlin.png"
           alt="JnJ"
           width="100%"
         />
@@ -152,7 +152,7 @@ const experiences = [
     position: 'Software Engineer',
     timeOfStay: 'May 2020 - Present',
     description:
-      "I'm a mid-level Software Engineer at SYKES Asia Inc. (recently acquired by Sitel Group), a frontend developer (ReactJS) that develops and maintain 2 of our internal web apps.",
+      "I'm a mid-level Software Engineer at SYKES Asia Inc. (recently acquired by Sitel Group), I'm a frontend developer (ReactJS) that develops and maintain two of our internal",
     employmentStatus: 'Full-time',
     isCurrent: true,
     alignLeft: false,
@@ -206,7 +206,7 @@ const experiences = [
 
 const Experience: React.FC = () => {
   return (
-    <div className="w-full h-full">
+    <div className="container bg-gray-200 mx-auto w-full h-full">
       <div className="relative wrap overflow-hidden h-full p-2 md:p-7 sm:p-3">
         <div
           className="h-full border-2-2 absolute border-opacity-20 border-gray-700 md:border"
