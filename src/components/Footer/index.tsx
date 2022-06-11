@@ -43,7 +43,7 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <ImageLazyLoader
-                  src="portfolio/images/social-media/facebook.svg"
+                  src="/portfolio/images/social-media/facebook.svg"
                   className="h-5 text-white-opaque"
                   alt="facebook"
                 />
@@ -56,7 +56,7 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <ImageLazyLoader
-                  src="portfolio/images/social-media/instagram.svg"
+                  src="/portfolio/images/social-media/instagram.svg"
                   className="h-5 text-white-opaque"
                   alt="facebook"
                 />
@@ -69,7 +69,7 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <ImageLazyLoader
-                  src="portfolio/images/social-media/linkedin.svg"
+                  src="/portfolio/images/social-media/linkedin.svg"
                   className="h-5 text-white-opaque"
                   alt="facebook"
                 />
