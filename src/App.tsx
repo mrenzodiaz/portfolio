@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 import './App.scss';
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <div className="container mx-auto">
@@ -30,6 +30,6 @@ function App() {
       <Footer />
     </>
   );
-}
+};
 
 export default App;
