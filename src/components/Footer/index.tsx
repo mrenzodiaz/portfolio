@@ -5,7 +5,7 @@ import './index.scss';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer flex justify-center">
       <div className="container flex flex-col items-center">
         <div className="footer-pitch flex sm:flex-row flex-col justify-between items-center w-full lg:w-1/2">
           <div>
