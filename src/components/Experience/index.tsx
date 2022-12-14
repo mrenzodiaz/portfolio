@@ -11,7 +11,7 @@ const intelegenciaImages = () => {
     <div className="relative p-10 pt-2 mx-10 md:mx-0">
       <Animate
         animateOnce
-        animateIn="animate__fadeInRight"
+        animateIn="animate__fadeInLeft"
         className="text-right"
         offset={150}
         duration={ANIMATE_DURATION}
@@ -25,7 +25,7 @@ const intelegenciaImages = () => {
 
       <Animate
         animateOnce
-        animateIn="animate__fadeInRight"
+        animateIn="animate__fadeInLeft"
         className="absolute -bottom-4 -left-2 md:-left-14 md:-bottom-6"
         offset={150}
         duration={ANIMATE_DURATION}
@@ -51,7 +51,7 @@ const darkFallsLLCImages = () => {
         duration={ANIMATE_DURATION}
       >
         <ImageLazyLoader
-          className="shadow-2xl w-auto"
+          className="shadow-2xl w-auto aspect-square"
           src="/portfolio/images/experiences/reference-cloud.png"
           alt="Reference Cloud"
         />
