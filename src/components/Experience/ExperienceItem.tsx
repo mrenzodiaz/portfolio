@@ -4,6 +4,7 @@ import { T_ExperienceItem } from '../../types/Experience';
 interface ExperienceItemProps extends T_ExperienceItem {
   itemNumber: number;
   images?: any;
+  key: number;
 }
 
 const ExperienceItem: React.FC<ExperienceItemProps> = ({

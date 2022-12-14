@@ -5,4 +5,10 @@
   &-pitch {
     @apply px-16 py-10 bg-slate-800 shadow-2xl rounded-2xl mb-24 relative -mt-10;
   }
+
+  .social-links {
+    li {
+      @apply transition ease-in-out hover:-translate-y-[0.10rem] duration-500 grayscale hover:grayscale-0;
+    }
+  }
 }

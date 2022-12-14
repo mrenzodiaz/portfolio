@@ -6,6 +6,74 @@ import './index.scss';
 
 const ANIMATE_DURATION = 0.8;
 
+const intelegenciaImages = () => {
+  return (
+    <div className="relative p-10 pt-2 mx-10 md:mx-0">
+      <Animate
+        animateOnce
+        animateIn="animate__fadeInRight"
+        className="text-right"
+        offset={150}
+        duration={ANIMATE_DURATION}
+      >
+        <ImageLazyLoader
+          className="shadow-2xl w-auto"
+          src="/portfolio/images/experiences/global-university-systems.png"
+          alt="Global University Systems"
+        />
+      </Animate>
+
+      <Animate
+        animateOnce
+        animateIn="animate__fadeInRight"
+        className="absolute -bottom-4 -left-2 md:-left-14 md:-bottom-6"
+        offset={150}
+        duration={ANIMATE_DURATION}
+      >
+        <ImageLazyLoader
+          className="shadow-2xl w-6/12"
+          src="/portfolio/images/experiences/gus-niagara.png"
+          alt="GUS Niagara"
+        />
+      </Animate>
+    </div>
+  );
+};
+
+const darkFallsLLCImages = () => {
+  return (
+    <div className="relative p-10 pt-2 mx-10 md:mx-0">
+      <Animate
+        animateOnce
+        animateIn="animate__fadeInRight"
+        className="text-right"
+        offset={150}
+        duration={ANIMATE_DURATION}
+      >
+        <ImageLazyLoader
+          className="shadow-2xl w-auto"
+          src="/portfolio/images/experiences/reference-cloud.png"
+          alt="Reference Cloud"
+        />
+      </Animate>
+
+      <Animate
+        animateOnce
+        animateIn="animate__fadeInRight"
+        className="absolute -bottom-4 -left-2 md:-left-14 md:-bottom-6"
+        offset={150}
+        duration={ANIMATE_DURATION}
+      >
+        <ImageLazyLoader
+          className="shadow-2xl w-6/12"
+          src="/portfolio/images/experiences/neighbors.png"
+          alt="Neighbors"
+        />
+      </Animate>
+    </div>
+  );
+};
+
 const dataDrivenImages = () => {
   return (
     <div className="relative p-10 pt-2 mx-10 md:mx-0">
@@ -152,9 +220,31 @@ const henlinImages = () => {
 
 const experiences = [
   {
+    company: 'Intelegencia',
+    position: 'Senior Software Engineer',
+    timeOfStay: 'August 2022 - Present',
+    description:
+      "I'm Senior Software Engineer at Intelegencia. I've been assigned as a Frontend Developer to our client GUS (Global University Systems) that develops and maintain our client's customers' multiple web applications.",
+    employmentStatus: 'Full-time',
+    isCurrent: true,
+    alignLeft: false,
+    images: intelegenciaImages(),
+  },
+  {
+    company: 'Dark Falls LLC',
+    position: 'Frontend React Engineer',
+    timeOfStay: 'June 2022 - December 2022',
+    description:
+      'ReactJS developer of Dark Falls LLC. Contributed to several projects of the company.',
+    employmentStatus: 'Freelance (Upwork)',
+    isCurrent: true,
+    alignLeft: true,
+    images: darkFallsLLCImages(),
+  },
+  {
     company: 'Sitel Group (former SYKES Asia)',
     position: 'Software Engineer',
-    timeOfStay: 'May 2020 - Present',
+    timeOfStay: 'May 2020 - August 2022',
     description:
       "I'm a mid-level Software Engineer at SYKES Asia Inc. (recently acquired by Sitel Group), I'm a frontend developer (ReactJS) that develops and maintain two of our internal",
     employmentStatus: 'Full-time',
@@ -165,10 +255,10 @@ const experiences = [
   {
     company: 'Data Driven AI',
     position: 'Frontend React Engineer',
-    timeOfStay: 'December 2021',
+    timeOfStay: 'December 2021 - June 2022',
     description:
       'ReactJS contractor of Data Driven, we have developed CloudMonitor. CloudMonitor is an Microsoft Azure resource monitoring App that monitors your cloud consumption costs and looks for cost-saving opportunities.',
-    employmentStatus: 'Freelance',
+    employmentStatus: 'Freelance (Upwork)',
     isCurrent: false,
     alignLeft: true,
     images: dataDrivenImages(),
@@ -218,7 +308,7 @@ const Experience: React.FC = () => {
         ></div>
 
         {experiences.map((item, index) => (
-          <ExperienceItem itemNumber={index + 1} {...item} />
+          <ExperienceItem key={index} itemNumber={index + 1} {...item} />
         ))}
       </div>
     </div>

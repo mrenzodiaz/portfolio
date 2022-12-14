@@ -44,7 +44,7 @@ const Footer = () => {
               >
                 <ImageLazyLoader
                   src="/portfolio/images/social-media/facebook.svg"
-                  className="h-5 text-white-opaque"
+                  className="h-8 text-white-opaque"
                   alt="facebook"
                 />
               </a>
@@ -57,7 +57,7 @@ const Footer = () => {
               >
                 <ImageLazyLoader
                   src="/portfolio/images/social-media/instagram.svg"
-                  className="h-5 text-white-opaque"
+                  className="h-8 text-white-opaque"
                   alt="facebook"
                 />
               </a>
@@ -70,8 +70,21 @@ const Footer = () => {
               >
                 <ImageLazyLoader
                   src="/portfolio/images/social-media/linkedin.svg"
-                  className="h-5 text-white-opaque"
+                  className="h-8 text-white-opaque"
                   alt="facebook"
+                />
+              </a>
+            </li>
+            <li className="px-2">
+              <a
+                href="https://www.upwork.com/freelancers/~01c7d6274ef9d9dbe9/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ImageLazyLoader
+                  src="/portfolio/images/social-media/upwork-icon.svg"
+                  className="h-8 text-white-opaque"
+                  alt="upwork"
                 />
               </a>
             </li>
