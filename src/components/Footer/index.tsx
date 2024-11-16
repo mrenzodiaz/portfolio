@@ -1,7 +1,7 @@
-import React from 'react';
-import ImageLazyLoader from '../ImageLazyLoader';
+import React from "react";
+import ImageLazyLoader from "../ImageLazyLoader";
 
-import './index.scss';
+import "./index.scss";
 
 const Footer = () => {
   return (
@@ -97,16 +97,16 @@ const Footer = () => {
           <p>This site is made with:</p>
           <div className="mt-2">
             <i
-              className={'devicon-react-original mr-2'}
-              style={{ fontSize: '250%', color: 'white' }}
+              className={"devicon-react-original mr-2"}
+              style={{ fontSize: "250%", color: "white" }}
             />
             <i
-              className={'devicon-typescript-plain mr-2'}
-              style={{ fontSize: '250%', color: 'white' }}
+              className={"devicon-typescript-plain mr-2"}
+              style={{ fontSize: "250%", color: "white" }}
             />
             <i
-              className={'devicon-tailwindcss-plain'}
-              style={{ fontSize: '250%', color: 'white' }}
+              className={"devicon-tailwindcss-plain"}
+              style={{ fontSize: "250%", color: "white" }}
             />
           </div>
         </div>

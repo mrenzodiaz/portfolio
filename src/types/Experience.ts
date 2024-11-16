@@ -2,8 +2,7 @@ export interface T_ExperienceItem {
   company: string;
   position: string;
   timeOfStay: string;
-  description: string;
+  description: string | string[];
   employmentStatus: string;
-  isCurrent: boolean;
   alignLeft: boolean;
 }

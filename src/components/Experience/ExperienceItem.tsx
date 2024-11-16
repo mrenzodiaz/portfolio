@@ -1,5 +1,5 @@
-import React from 'react';
-import { T_ExperienceItem } from '../../types/Experience';
+import React from "react";
+import { T_ExperienceItem } from "~/types/Experience";
 
 interface ExperienceItemProps extends T_ExperienceItem {
   itemNumber: number;
@@ -13,7 +13,6 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   timeOfStay,
   description,
   employmentStatus,
-  isCurrent,
   alignLeft,
   itemNumber,
   images,
@@ -21,11 +20,11 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   return (
     <div
       className={`mb-16 flex justify-between items-center w-full ${
-        alignLeft ? 'md:flex-row-reverse' : 'md:flex-row'
+        alignLeft ? "md:flex-row-reverse" : "md:flex-row"
       } flex-col-reverse`}
     >
       <div className="order-1 w-full md:w-5/12 block">
-        {images ? images : ''}
+        {images ? images : ""}
       </div>
       <div className="z-20 hidden items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full md:flex">
         <h1 className="mx-auto text-white font-semibold text-lg">
@@ -45,8 +44,16 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
         </h3>
         <h3 className="text-white text-lg">{position}</h3>
         <h3 className="mb-3 text-white text-md">{timeOfStay}</h3>
-        <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100 text-justify">
-          {description}
+        <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
+          {Array.isArray(description) && description.length > 1 ? (
+            <div className="flex flex-col gap-2">
+              {description.map((desc) => (
+                <span>&bull; {desc}</span>
+              ))}
+            </div>
+          ) : (
+            description
+          )}
           {/* Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
